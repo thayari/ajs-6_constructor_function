@@ -17,3 +17,8 @@ test('incorrect data error', () => {
   // eslint-disable-next-line no-new
   expect(() => new Character('Loki', 'God')).toThrow('Переданы некорректные значения');
 });
+
+test('wrong name', () => {
+  // eslint-disable-next-line no-new
+  expect(() => new Character(123456, 'Swordsman')).toThrow('Переданы некорректные значения');
+});
